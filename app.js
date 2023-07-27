@@ -1,6 +1,7 @@
 require('dotenv').config();
 require('express-async-errors');
 
+
 const express = require('express');
 const app = express();
 
@@ -15,10 +16,6 @@ app.use('/api/v1', mainRouter);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
-
-
-
-
 
 
 
